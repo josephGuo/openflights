@@ -3,6 +3,7 @@
 require_once "locale.php";
 require_once "db_pdo.php";
 require_once "tripit_common.php";
+require_once "helper.php";
 
 $uid = $_SESSION["uid"];
 if (!$uid || empty($uid)) {
