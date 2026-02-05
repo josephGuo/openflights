@@ -1,6 +1,10 @@
 <?php
-
-session_set_cookie_params(['samesite' => 'Strict']);
+if ($OF_SAMESITE_LAX) {
+    $samesite_policy = 'Lax';
+} else {
+    $samesite_policy = 'Strict';
+}
+session_set_cookie_params(['samesite' => $samesite_policy]);
 session_start();
 
 include_once 'config.php';

@@ -1,4 +1,5 @@
 <?php
+$OF_SAMESITE_LAX = true;
 
 require_once "locale.php";
 require_once "db_pdo.php";
